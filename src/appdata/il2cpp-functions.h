@@ -37,6 +37,7 @@ DO_APP_FUNC(0x01104840, TSVector2, TrueSyncTransform_get_Forward, (TrueSyncTrans
 DO_APP_FUNC(0x05226E40, TSVector2, TSVector2_op_Addition, (TSVector2 value1, TSVector2 value2, MethodInfo* method));
 DO_APP_FUNC(0x05227130, TSVector2, TSVector2_op_Multiply, (TSVector2 value, FP scaleFactor, MethodInfo* method));
 DO_APP_FUNC(0x010FA3A0, FP, CommonHelper_GetTerrainHeight_1, (TSVector2 targetPosition, FP defaultPostionY, MethodInfo* method));
+DO_APP_FUNC(0x00911A80, int32_t, AdventureModuleController_get_EnterBattleStateTimes, (AdventureModuleController* __this, MethodInfo* method));
 
 // Instant Break
 DO_APP_FUNC(0x0159B3F0, iFP, SpecialAttributeList_GetAttributeValue, (SpecialAttributeList* __this, GameEnum_specialAttributeType__Enum type, MethodInfo* method));

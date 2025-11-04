@@ -79,6 +79,10 @@ namespace cheat::feature
 		if (player == nullptr)
 			return;
 
+		auto State = app::AdventureModuleController_get_EnterBattleStateTimes(adventureModuleController, nullptr);
+		if (State == 0)
+			return; // if kill boss before enter area it will forever lock
+
 		auto targetPos = GetForwardPos(player, 3);
 		for (auto monster : *monsterActors)
 		{
