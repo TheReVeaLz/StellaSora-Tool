@@ -64,7 +64,7 @@ namespace cheat::feature
 
 		if (hitEffect.f_MultiHit && !isPlayer(actor)) {
 			for (int i = 0; i < hitEffect.f_MultiHitMultiplier; i++) {
-				CALL_ORIGIN(AdventureActor_OnHitActor_Hook, __this, hitBox, uniqueAttackId + i, onceAttackTargetCount, actor, raycastHit, damaged, hurtEffectPrefab, isHittedEffectScale, effectIgnoreTimeScale, method);
+				CALL_ORIGIN(AdventureActor_OnHitActor_Hook, __this, hitBox, uniqueAttackId, onceAttackTargetCount, actor, raycastHit, damaged, hurtEffectPrefab, isHittedEffectScale, effectIgnoreTimeScale, method);
 			}
 
 			*damaged = true;
@@ -84,7 +84,7 @@ namespace cheat::feature
 
 		if (hitEffect.f_MultiHit && !isPlayer(entity)) {
 			for (int i = 0; i < hitEffect.f_MultiHitMultiplier; i++) {
-				CALL_ORIGIN(AreaEffectEntity_OnHitActor_Hook, __this, hitBox, uniqueAttackId + i, onceAttackTargetCount, entity, raycastHit, damaged, hurtEffectPrefab, isHittedEffectScale, effectIgnoreTimeScale, method);
+				CALL_ORIGIN(AreaEffectEntity_OnHitActor_Hook, __this, hitBox, uniqueAttackId, onceAttackTargetCount, entity, raycastHit, damaged, hurtEffectPrefab, isHittedEffectScale, effectIgnoreTimeScale, method);
 			}
 
 			*damaged = true;
@@ -104,7 +104,7 @@ namespace cheat::feature
 
 		if (hitEffect.f_MultiHit && !isPlayer(entity)) {
 			for (int i = 0; i < hitEffect.f_MultiHitMultiplier; i++) {
-				CALL_ORIGIN(AreaEffect_AttackComponent_OnHitActor_Hook, __this, hitBox, uniqueAttackId + i, onceAttackTargetCount, entity, raycastHit, damaged, hurtEffectPrefab, isHittedEffectScale, effectIgnoreTimeScale, method);
+				CALL_ORIGIN(AreaEffect_AttackComponent_OnHitActor_Hook, __this, hitBox, uniqueAttackId, onceAttackTargetCount, entity, raycastHit, damaged, hurtEffectPrefab, isHittedEffectScale, effectIgnoreTimeScale, method);
 			}
 
 			*damaged = true;
@@ -125,7 +125,7 @@ namespace cheat::feature
 
 		if (hitEffect.f_MultiHit && !isPlayer(actor)) {
 			for (int i = 0; i < hitEffect.f_MultiHitMultiplier; i++) {
-				CALL_ORIGIN(AdventureWeapon_OnHitActor_Hook, __this, hitBox, uniqueAttackId + i, onceAttackTargetCount, actor, raycastHit, damaged, hurtEffectPrefab, isHittedEffectScale, effectIgnoreTimeScale, method);
+				CALL_ORIGIN(AdventureWeapon_OnHitActor_Hook, __this, hitBox, uniqueAttackId, onceAttackTargetCount, actor, raycastHit, damaged, hurtEffectPrefab, isHittedEffectScale, effectIgnoreTimeScale, method);
 			}
 
 			*damaged = true;
@@ -145,7 +145,7 @@ namespace cheat::feature
 
 		if (hitEffect.f_MultiHit && !isPlayer(actor)) {
 			for (int i = 0; i < hitEffect.f_MultiHitMultiplier; i++) {
-				CALL_ORIGIN(AdventureBullet_OnHitActor_Hook, __this, hitBox, uniqueAttackId + i, onceAttackTargetCount, actor, raycastHit, damaged, hurtEffectPrefab, isHittedEffectScale, effectIgnoreTimeScale, method);
+				CALL_ORIGIN(AdventureBullet_OnHitActor_Hook, __this, hitBox, uniqueAttackId, onceAttackTargetCount, actor, raycastHit, damaged, hurtEffectPrefab, isHittedEffectScale, effectIgnoreTimeScale, method);
 			}
 
 			*damaged = true;
