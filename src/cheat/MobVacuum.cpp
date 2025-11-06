@@ -79,7 +79,7 @@ namespace cheat::feature
 		if (player == nullptr)
 			return;
 
-		auto State = app::AdventureModuleController_get_EnterBattleStateTimes(adventureModuleController, nullptr);
+		auto State = adventureModuleController->fields._enterBattleStateTimes;
 		if (State == 0)
 			return;
 
